@@ -1,3 +1,5 @@
+<?php
+
 /*
     Exercício 1 - Soma:
     Declare duas variáveis contendo números inteiros e exiba a soma dos dois números.
@@ -20,3 +22,7 @@
     Exercício 7 - Operadores de Comparação:
     Declare duas variáveis contendo números inteiros e utilize operadores de comparação para determinar se o primeiro número é igual, diferente, maior, menor, maior ou igual ou menor ou igual ao segundo número. Exiba o resultado de cada comparação.
 */
+
+
+
+?>

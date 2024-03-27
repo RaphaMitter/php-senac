@@ -22,18 +22,47 @@
     Crie uma variável contendo uma palavra. Inverta a palavra e exiba o resultado.
 */
 
-//Ex01
-$texto = "Raphael,";
-$novo_texto = "Porteiro";
-echo $texto." ".$novo_texto;
-echo "<br>";
+// 1
+$nome = "Ana";
+$profissao = "Engenharia";
+$frase = $nome . " é " . $profissao;
+echo $frase . "<br>";
 
-//Ex02
-$texto = "Estou aprendendo PHP";
-echo strlen($texto);
+// 2 
+$senha = "senha123";
 
-//Ex03
-$texto = "";
+if(strlen($senha) >= 8) {
+    echo "Senha válida. <br>";
+} else {
+    echo "Senha deve ter pelo menos 8 caractares <br>";
+}
 
+//3
+$frase = "O cachorro late alto.";
+$nova_frase = str_replace("cachorro", "gato", $frase);
+echo $nova_frase ."<br>";
 
+//4
+$palavra = "ExEmPlO";
+$palavra_minuscula = strtolower($palavra);
+$palavra_maiuscula = strtoupper($palavra);
+
+echo "Plavara em minúsculoas: $palavra_minuscula <br>";
+echo "Plavara em maiúsculas: $palavra_maiuscula <br>";
+
+//5
+$url = "           http://exemplo.com  ";
+$url_sem_espacos = trim($url);
+echo $url_sem_espacos ."<br>";
+
+//6
+$lista_compras = "arroz, feijao, leite, carne";
+$posicao_leite = strpos($lista_compras, "leite");
+echo "A posicao do item 'leite' na lsita de compras é: $posicao_leite <br>";
+
+//7
+$palavra = "abcd1234";
+$palavra_invertida = strrev($palavra);
+echo $palavra_invertida;
 ?>
+
